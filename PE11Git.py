@@ -1,6 +1,6 @@
 #PE 11: Largest Product of 4 adjacent numbers in a Grid
 
-"""
+""" example 20x20 matrix
 08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
 81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
@@ -27,7 +27,7 @@ import numpy as np
 Q = 20 # dimension of square
 max = 0
 
-with open("NumberGrid.txt","r") as file: #The grid is saved to a txt file named "NumberGrid.txt"
+with open("NumberGrid.txt","r") as file: #The grid was previously saved to a txt file named "NumberGrid.txt"
     A = [list(map(int, line.strip().split())) for line in file]
     A = np.array(A)
     
