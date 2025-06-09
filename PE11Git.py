@@ -42,12 +42,12 @@ for i in range(0,Q): #sweeps along chart
         if p > max:
             max = p
 #Checking downright diag products
-        if i < 16:
+        if i < Q-4:
             p = np.product([A[n,i],A[n+1,i+1],A[n+2,i+2],A[n+3,i+3]])
             if p > max:
                 max = p 
 #Checking downleft diag products
-        if i < 16:
+        if i < Q-4:
             p = np.product([A[n+3,i],A[n+2,i+1],A[n+1,i+2],A[n,i+3]])        
             if p > max:
                 max = p
